@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <link rel="stylesheet" href="assets/css/Hero-Clean-images.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
@@ -23,18 +24,19 @@
                     <li class="nav-item"><a class="nav-link active" href="rooms.html">Rooms</a></li>
                     <li class="nav-item"><a class="nav-link" href="devices.html">Devices</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul><a class="btn btn-primary ms-md-2" role="button" href="#">Logout</a>
+                </ul><a class="btn btn-primary ms-md-2" role="button" href="login.html">Logout</a>
             </div>
         </div>
     </nav>
     <div class="container py-4 py-xl-5">
         <div class="row mb-5">
-            <div class="col-md-8 col-xl-6 text-center mx-auto">
+            <div class="col-md-8 col-xl-6 text-center mx-auto" data-aos="fade" data-aos-duration="2000">
                 <h2>DEVICES</h2>
                 <p>Discover a multitude of smart devices that are designed to work in harmony with our smart home system.</p>
             </div>
         </div>
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
+
             <div class="col" style="position: relative;">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/light.jpeg"></a>
                     <div class="py-4">
@@ -48,6 +50,7 @@
                 <div class="btn-group" role="group"><button class="btn btn-primary" id="light-button-on" type="button">ON</button>
                     <button class="btn btn-primary" id="light-button-off" type="button">OFF</button></div>
             </div>
+            
             <div class="col">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/kapiii.jpg"></a>
                     <div class="py-4">
@@ -61,6 +64,7 @@
                 <div class="btn-group" role="group"><button class="btn btn-primary" id="lock-on" type="button">ON</button>
                     <button class="btn btn-primary" id="lock-off" type="button">OFF</button></div>
             </div>
+
             <div class="col">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/klima.jpg"></a>
                     <div class="py-4">
@@ -74,6 +78,7 @@
                 <div class="btn-group" role="group"><button class="btn btn-primary" id="ac-on" type="button">ON</button>
                     <button class="btn btn-primary" id="ac-off" type="button">OFF</button></div>
             </div>
+
             <div class="col">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/airp.jpg"></a>
                     <div class="py-4">
@@ -87,6 +92,7 @@
                 <div class="btn-group" role="group"><button class="btn btn-primary" id="airp-on" type="button">ON</button>
                     <button class="btn btn-primary" id="airp-off" type="button">OFF</button></div>
             </div>
+
             <div class="col">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/blinds.jpg"></a>
                     <div class="py-4">
@@ -100,6 +106,7 @@
                 <div class="btn-group" role="group"><button class="btn btn-primary" id="blinds-on" type="button">ON</button>
                     <button class="btn btn-primary" id="blinds-off" type="button">OFF</button></div>
             </div>
+
             <div class="col">
                 <div><a href="#"><img class="rounded img-fluid d-block w-100 fit-cover" data-bss-hover-animate="pulse" style="height: 200px;" src="assets/img/robot.jpg"></a>
                     <div class="py-4">
@@ -116,11 +123,12 @@
         </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
     <script src="assets/js/Lightbox-Gallery.js"></script>
     <script>
-		// Light buttons
+		// light buttons
 		document.getElementById("light-button-on").addEventListener("click", function(){
 			document.getElementById("light-status").innerHTML = "On";
 		});
@@ -136,7 +144,7 @@
 			document.getElementById("lock-status").innerHTML = "Off";
 		});
 
-        //ac buttons
+        // ac buttons
         document.getElementById("ac-on").addEventListener("click", function(){
 			document.getElementById("ac-status").innerHTML = "On";
 		});
@@ -144,7 +152,7 @@
 			document.getElementById("ac-status").innerHTML = "Off";
 		});
 
-        //air purifier buttons
+        // air purifier buttons
         document.getElementById("airp-on").addEventListener("click", function(){
 			document.getElementById("airp-status").innerHTML = "On";
 		});
@@ -152,7 +160,7 @@
 			document.getElementById("airp-status").innerHTML = "Off";
 		});
 
-        //blinds buttons
+        // blinds buttons
         document.getElementById("blinds-on").addEventListener("click", function(){
 			document.getElementById("blinds-status").innerHTML = "On";
 		});
@@ -160,7 +168,7 @@
 			document.getElementById("blinds-status").innerHTML = "Off";
 		});
 
-        //robot cleaner buttons
+        // robot cleaner buttons
         document.getElementById("robot-on").addEventListener("click", function(){
 			document.getElementById("robot-status").innerHTML = "On";
 		});
